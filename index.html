@@ -1,61 +1,71 @@
-
-
 <!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<style type="text/css">
+body {margin: 30px;}
+</style> 
 
-<html lang="en">
-    <head>
-        <title>Task Estimator</title>
-        <meta charset="UTF-8"/>
-        <meta name=author content="Swaroopa Tirumalareddy"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Total Tasks</title>
+  
+    <meta name="description" content="Given a courseName and maxLength, display characters remaining">
+    <meta name="author" content="Anil Bomma">
+  
+    <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
+  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+  
+    <!-- required for sticky footer -->
+    <style>
+      body,
+      .sticky-footer-wrapper {
+        min-height: 100vh;
+      }
+    </style>
+  
+  </head>
+  
+  <body style="background-color:silver;" class="d-flex flex-column sticky-footer-wrapper">
+    <!-- Bootstrap container or container-fluid (whole width) -->
+    <!-- https://getbootstrap.com/docs/4.0/layout/overview/ -->
+    <!-- margin top 5 ($spacer * 3) -->
+    <main class="container mt-5 flex-fill">
+  
+      <!--Container has rows - first row -->
+      <div class="row">
+  
+        <!--Rows have columns - column 1 (7/12) -->
+        <div class="col-md-7 mb-4">
+  
+  
+<form >
+<strong>Count of Stories:</strong><input type="number" id="firstNumber" /><br>
+<strong>Avg Tasks per Story:</strong> <input type="number" id="secondNumber" /><br>
+<input type="button" class="btn btn-primary" onClick="multiplyBy()" Value="Multiply" />
+</form>
+<strong><p>Estimated Total Tasks : <br></strong>
+<strong><span id = "result"></span></strong>
+</p>
+<script src="s.js"></script>
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark fixed-bottom">
 
-        <!-- https://mdbootstrap.com/md-bootstrap-cdn/ -->
-        <!-- Material Design for Bootstrap fonts and icons -->
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-        <!-- Google Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-        <!-- Bootstrap core CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Material Design Bootstrap -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> Swaroopa Tirumalareddy</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
-        <link href="./css/App.css" rel="stylesheet">
-    </head>                                              
-    <body>
-        <header>
-        </header>                                        
-        <nav></nav>
-        <main class="container">
-            <article>
-                <h1>Task Estimator</h1>
-                <form method="POST">
-                    <!-- Total Line (Includes total tasks and total box (totalInput)) -->
-                    <label for="counttasks">Total:</label>
-                    <input type="number" step=1 name="countOfStories" id="counttasks" placeholder="Input Total Here"><br><br>
-
-                    <label for="avgtasks">Total:</label>
-                    <input type="number" step=1 name="avgTasksPerStory" id="avgtasks" placeholder="Input Total Here"><br><br>
-
-                    <button type="button" id="calc">Calculate</button>
-                </form>
-            </article>
-        </main> 
-        <footer class="container" id="foot">
-            <p>&copy; 2020 Swaroopa Tirumalareddy, all rights reserved.</p>
-          <br>
-        </footer>
-
-        <!-- JQuery -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
-
-        <script src="App.js"></script>
-    </body>
+</body>
 </html>
-
- 
