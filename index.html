@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Task Estimator</title>
+        <meta charset="UTF-8"/>
+        <meta name=author content="Swaroopa Tirumalareddy"/>
+
+        <!-- https://mdbootstrap.com/md-bootstrap-cdn/ -->
+        <!-- Material Design for Bootstrap fonts and icons -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+
+        <link href="./css/App.css" rel="stylesheet">
+    </head>                                              
+    <body>
+        <header>
+        </header>                                        
+        <nav></nav>
+        <main class="container">
+            <article>
+                <h1>Task Estimator</h1>
+                <form method="POST">
+                    <!-- Total Line (Includes total tasks and total box (totalInput)) -->
+                    <label for="counttasks">Total:</label>
+                    <input type="number" step=1 name="countOfStories" id="counttasks" placeholder="Input Total Here"><br><br>
+
+                    <label for="avgtasks">Total:</label>
+                    <input type="number" step=1 name="avgTasksPerStory" id="avgtasks" placeholder="Input Total Here"><br><br>
+
+                    <button type="button" id="calc">Calculate</button>
+                </form>
+            </article>
+        </main> 
+        <footer class="container" id="foot">
+            <p>&copy; 2020 Swaroopa Tirumalareddy, all rights reserved.</p>
+          <br>
+        </footer>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+
+        <script src="App.js"></script>
+    </body>
+</html>
+7 - Task Estimator
+Given countOfStories * avgTasksPerStory, display estimated total tasks
+input 1 type - number
+input 1 - countOfStories
+input 2 type - number
+Input 2 - avgTasksPerStory
+
+function: countOfStories* avgTasksPerStory
+
+ 
